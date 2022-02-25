@@ -75,3 +75,10 @@ domOn('.externalCircle', 'mouseover', evt => {
 
     console.log("afterchange", evt.target.r.baseVal.value)
 });
+
+
+
+//récupérer le texte de l'ex 4
+
+let name = document.querySelector('.name');
+console.log(name);
