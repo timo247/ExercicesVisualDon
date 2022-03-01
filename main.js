@@ -32,34 +32,6 @@ domOn('.redRectangle', 'click', evt => {
 });
 
 
-//Changer le rectangle de couleur
-domOn('.redRectangle', 'click', evt => {
-
-    //Récupération du nombre de clicks posés sur le rectangle
-    let rectangleDiv = document.querySelector('.redRectangle');
-    let numberOfClicks = parseInt(rectangleDiv.dataset.clicknumbers);
-    console.log(numberOfClicks)
-
-
-
-    let fillColor = 'red'
-    //On change en vert si nClick est impair et en rouge si n clicks est paire
-    if (numberOfClicks % 2 == 0) {
-        fillColor = 'green'
-    } else {
-        fillColor = 'red';
-    }
-
-    //On stock la nouvelle valeur de nClicks valeurs
-    numberOfClicks++;
-    rectangleDiv.dataset.clicknumbers = numberOfClicks;
-
-    let rectangle = evt.target;
-    rectangle.setAttribute("fill", fillColor);
-    console.log(evt.target)
-
-});
-
 
 /*
 let donut = document.querySelector('.externalCircle');
